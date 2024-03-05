@@ -1,13 +1,4 @@
-﻿using Exiled.API.Features;
-using HarmonyLib;
-using RemoteAdmin;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Text.RegularExpressions;
-using System.Threading.Tasks;
-using UnityEngine.Windows;
+﻿using HarmonyLib;
 
 namespace PluginsTranslator.Patches
 {
