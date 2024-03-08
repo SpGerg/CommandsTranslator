@@ -33,15 +33,16 @@ namespace PluginsTranslator
             {
                 var match = matches[i];
 
-                //After translated message, we have original message. We didnt need and skip it.
-                //...5521abb im dont know what is, but im dont wanna to show it because it can show my private info. 
-                //en_ru_2023q1.md it is third thing from google
+                //banalnybanan comments editor
+                //After the translated message comes the original one, we don’t need it, so we skip it.
+                //...5521abb i don't know what that means, so we'll skip it.
+                //en_ru_2023q1.md this is the third answer from Google
                 if (i % 2 != 0 || match.Value.Contains("abb") || match.Value.Contains("md"))
                 {
                     continue;
                 }
 
-                ////r and /n, can be on string end, substring cuz match value starting with '"' char,
+                // /r and /n can be at the end of a line, they are not special characters, so we make them special characters.
                 result += match.Value.Substring(1, match.Value.Length - 2).Replace("\\n", "\n").Replace("\\r", "\r");
             }
 
